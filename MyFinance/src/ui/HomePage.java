@@ -16,19 +16,23 @@ public class HomePage {
 
     Connection connection;
     Stage primaryStage;
+    String username;
 
-    public Scene display(Connection connection, Stage primaryStage) {
+    public Scene display(Connection connection, Stage primaryStage, String username) {
         this.connection = connection;
         this.primaryStage = primaryStage;
+        this.username = username;
         BorderPane homePage = new BorderPane();
         homePage.setPrefSize(1280, 720);
         homePage.setPadding(new Insets(25, 25, 25, 25));
 
-        HBox topToolbar = new TopToolbar().topToolbar(connection, primaryStage);
+        HBox topToolbar = new TopToolbar().topToolbar(connection, primaryStage, username);
         homePage.topProperty().setValue(topToolbar);
-        GridPane leftPanel = new LeftPanel().leftPanel(connection, primaryStage);
+        BorderPane leftPanel = new LeftPanel().leftPanel(connection, primaryStage, username);
+        leftPanel.setPadding(new Insets(25, 25, 0, 0));
         homePage.setLeft(leftPanel);
-        GridPane rightPanel = new RightPanel().rightPanel(connection, primaryStage);
+        BorderPane rightPanel = new RightPanel().rightPanel(connection, primaryStage, username);
+        rightPanel.setPadding(new Insets(25, 25, 0, 0));
         homePage.setRight(rightPanel);
 
         return new Scene(homePage, 1280, 720);

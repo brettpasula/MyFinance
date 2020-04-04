@@ -2,11 +2,13 @@ package ui.HomePageComponents;
 
 import javafx.event.Event;
 import javafx.event.EventHandler;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.Priority;
 import javafx.stage.Stage;
+import ui.HomePage;
 import ui.LoginPage;
 import ui.MyAccountPage;
 
@@ -17,8 +19,11 @@ public class TopToolbar implements EventHandler {
     Connection connection;
     Stage primaryStage;
     Button logoutButton, myAccountButton;
+    String username;
+    HomePage homePage;
 
-    public HBox topToolbar(Connection connection, Stage primaryStage) {
+    public HBox topToolbar(Connection connection, Stage primaryStage, String username) {
+        this.username = username;
         this.connection = connection;
         this.primaryStage = primaryStage;
         HBox topToolbar = new HBox();
@@ -43,7 +48,7 @@ public class TopToolbar implements EventHandler {
         }
 
         if (event.getSource() == myAccountButton) {
-            primaryStage.setScene(new MyAccountPage().display(connection, primaryStage));
+            primaryStage.setScene(new MyAccountPage().display(connection, primaryStage, username));
         }
     }
 }
