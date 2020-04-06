@@ -3,11 +3,10 @@ package ui;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-import ui.HomePageComponents.LeftPanel;
 import ui.HomePageComponents.RightPanel;
+import ui.HomePageComponents.LeftPanel;
 import ui.HomePageComponents.TopToolbar;
 
 import java.sql.Connection;

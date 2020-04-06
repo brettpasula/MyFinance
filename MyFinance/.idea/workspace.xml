@@ -2,22 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/database/MyFinance_CreateTables.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/MyFinance_PopulateTables.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddd9e0ea-df81-41a4-af8f-9a0ee3b145f6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddd9e0ea-df81-41a4-af8f-9a0ee3b145f6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddd9e0ea-df81-41a4-af8f-9a0ee3b145f6/storage_v2/_src_/schema/ORA_BPASULA.CS-jkw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddd9e0ea-df81-41a4-af8f-9a0ee3b145f6/storage_v2/_src_/schema/ORA_BPASULA.CS-jkw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyFinance/ui/CreateUserPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyFinance/ui/CreateUserPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyFinance/ui/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyFinance/ui/HomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyFinance/ui/HomePageComponents/LeftPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyFinance/ui/HomePageComponents/LeftPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyFinance/ui/HomePageComponents/RightPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyFinance/ui/HomePageComponents/RightPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyFinance/ui/HomePageComponents/TopToolbar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyFinance/ui/HomePageComponents/TopToolbar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyFinance/ui/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyFinance/ui/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/CreateUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/CreateUserPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyFinance/ui/HomePageComponents/TableRecordsRetriever$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyFinance/ui/HomePageComponents/TableRecordsRetriever$Budget.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyFinance/ui/HomePageComponents/TableRecordsRetriever.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyFinance/ui/MyAccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyFinance/ui/MyAccountPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/HomePageComponents/LeftPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/HomePageComponents/LeftPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/HomePageComponents/RightPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/HomePageComponents/RightPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/HomePageComponents/TopToolbar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/HomePageComponents/TopToolbar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/HomePageComponents/TableRecordsRetriever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/TableViewRecordsRetriever.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MyAccountPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +53,7 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@dbhost.students.cs.ubc.ca" type="feb32156:DbDataSourceImpl" />
         <item name="ORA_BPASULA: schema" type="3abd1b6a:OraImplModel$Schema" />
-        <item name="BUDGETS: table" type="942f455b:OraImplModel$Table" />
+        <item name="BILLS: table" type="942f455b:OraImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -139,16 +139,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/database" />
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
@@ -256,11 +258,6 @@
                 <item name="root:@dbhost.students.cs.ubc.ca" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="com.intellij.database.console.session.MessageBusSession@38fea1de" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:@dbhost.students.cs.ubc.ca" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@36715065" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -284,7 +281,7 @@
       <workItem from="1585754713556" duration="4429000" />
       <workItem from="1585759632701" duration="5069000" />
       <workItem from="1585853000662" duration="40295000" />
-      <workItem from="1586024481044" duration="6118000" />
+      <workItem from="1586024481044" duration="36366000" />
     </task>
     <servers />
   </component>
@@ -324,53 +321,57 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="420" height="466" key="DebuggerActiveHint/0.23.1680.1027@0.23.1680.1027" timestamp="1586029801376" />
-    <state width="1638" height="415" key="GridCell.Tab.0.bottom" timestamp="1586030609614">
+    <state width="1638" height="355" key="GridCell.Tab.0.bottom" timestamp="1586144655985">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586030609614" />
-    <state width="1638" height="415" key="GridCell.Tab.0.center" timestamp="1586030609613">
+    <state width="1638" height="355" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586144655985" />
+    <state width="1638" height="355" key="GridCell.Tab.0.center" timestamp="1586144655984">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586030609613" />
-    <state width="1638" height="415" key="GridCell.Tab.0.left" timestamp="1586030609613">
+    <state width="1638" height="355" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586144655984" />
+    <state width="1638" height="355" key="GridCell.Tab.0.left" timestamp="1586144655984">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586030609613" />
-    <state width="1638" height="415" key="GridCell.Tab.0.right" timestamp="1586030609614">
+    <state width="1638" height="355" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586144655984" />
+    <state width="1638" height="355" key="GridCell.Tab.0.right" timestamp="1586144655985">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586030609614" />
-    <state width="798" height="147" key="GridCell.Tab.1.bottom" timestamp="1586030291472">
+    <state width="1638" height="355" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586144655985" />
+    <state width="1638" height="355" key="GridCell.Tab.1.bottom" timestamp="1586144655986">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="147" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586030291472" />
-    <state width="798" height="147" key="GridCell.Tab.1.center" timestamp="1586030291471">
+    <state width="1638" height="355" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586144655986" />
+    <state width="1638" height="355" key="GridCell.Tab.1.center" timestamp="1586144655985">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="147" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586030291471" />
-    <state width="798" height="147" key="GridCell.Tab.1.left" timestamp="1586030291471">
+    <state width="1638" height="355" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586144655985" />
+    <state width="1638" height="355" key="GridCell.Tab.1.left" timestamp="1586144655985">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="147" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586030291471" />
-    <state width="798" height="147" key="GridCell.Tab.1.right" timestamp="1586030291472">
+    <state width="1638" height="355" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586144655985" />
+    <state width="1638" height="355" key="GridCell.Tab.1.right" timestamp="1586144655985">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="147" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586030291472" />
-    <state x="0" y="23" width="1680" height="1027" key="SettingsEditor" timestamp="1585855885947">
+    <state width="1638" height="355" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586144655985" />
+    <state x="0" y="23" width="1680" height="1027" key="SettingsEditor" timestamp="1586127340297">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="0" y="23" width="1680" height="1027" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1585855885947" />
+    <state x="0" y="23" width="1680" height="1027" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1586127340297" />
     <state x="517" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1586024483189">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="517" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1586024483189" />
+    <state x="578" y="296" key="extract.method.dialog" timestamp="1586056890951">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="578" y="296" key="extract.method.dialog/0.23.1680.1027@0.23.1680.1027" timestamp="1586056890951" />
     <state x="217" y="159" key="new project wizard" timestamp="1585754913612">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="217" y="159" key="new project wizard/0.23.1680.1027@0.23.1680.1027" timestamp="1585754913611" />
-    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1585952887998">
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1586117366580">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1585952887998" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1586117366580" />
   </component>
 </project>

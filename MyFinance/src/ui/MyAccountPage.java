@@ -20,7 +20,7 @@ public class MyAccountPage implements EventHandler {
     Stage primaryStage;
     TextField usernameField, passwordField, firstNameField, lastNameField, streetAddressField, cityField, postalCodeField;
     ChoiceBox provinceDropdown;
-    Button updateButton, backButton;
+    Button updateButton, backButton, deleteButton;
     String username;
 
 
@@ -76,12 +76,15 @@ public class MyAccountPage implements EventHandler {
         postalCodeField = new TextField(getPostalCode(userStreetAddress, userCity, userProvince));
 
         // Buttons...
-        updateButton = new Button("Update");
+        updateButton = new Button("Update password");
         updateButton.setOnAction(this::handle);
         backButton = new Button("Back to home");
         backButton.setOnAction(this::handle);
+        deleteButton = new Button("Delete account");
+        deleteButton.setOnAction(this::handle);
         HBox buttonPane = new HBox(10);
         buttonPane.setAlignment(Pos.BOTTOM_RIGHT);
+        buttonPane.getChildren().add(deleteButton);
         buttonPane.getChildren().add(backButton);
         buttonPane.getChildren().add(updateButton);
 
@@ -113,6 +116,25 @@ public class MyAccountPage implements EventHandler {
         if (event.getSource() == backButton) {
             primaryStage.setScene(new HomePage().display(connection, primaryStage, username));
         }
+        if (event.getSource() == deleteButton) {
+            deleteUser();
+        }
+        if (event.getSource() == updateButton) {
+            updateUser(username);
+
+        }
+    }
+
+    private void deleteUser() {
+        try {
+            Statement s = connection.createStatement();
+            s.execute(String.format("delete from my_finance_users where username='%s'", username));
+            primaryStage.setScene(new LoginPage().display(connection, primaryStage));
+            PopUp.display("Deletion Successul", "Account and all associated data succesfully deleted.");
+        } catch (SQLException e) {
+            PopUp.display("Error", "Something went wrong while deleting your account.\n" + e);
+            System.exit(0); // Crash because something's weird...
+        }
     }
 
     private String getPostalCode(String street_address, String city, String province) {
@@ -143,5 +165,14 @@ public class MyAccountPage implements EventHandler {
             result = "[ERROR]: "+e;
         }
         return result;
+    }
+
+    private void updateUser(String username) {
+        try {
+            connection.createStatement().executeQuery(String.format("update my_finance_users set user_password='%s' where username='%s'", passwordField.getText(), username));
+            PopUp.display("Success", "Password successfully updated.");
+        } catch (SQLException e) {
+            PopUp.display("Error", "There was an issue updating your password.\n[ERROR]:");
+        }
     }
 }
